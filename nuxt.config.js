@@ -146,13 +146,13 @@ export default defineNuxtConfig({
         { name: 'twitter:title', content: 'Cloud-Space – Home' },
         { name: 'twitter:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
         { name: 'twitter:card', content: 'summary_large_image', },
-        { property: 'twitter:image', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
+        { property: 'twitter:image', content: 'https://a.storyblok.com/f/278050/1200x630/fb3d2a61cd/og.jpg/m/' },
 
         //og 
         { property: 'og:locale', content: 'en-US' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:image:secure_url', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
-        { property: 'og:image', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
+        { property: 'og:image:secure_url', content: 'https://a.storyblok.com/f/278050/1200x630/fb3d2a61cd/og.jpg/m/' },
+        { property: 'og:image', content: 'https://a.storyblok.com/f/278050/1200x630/fb3d2a61cd/og.jpg/m/' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'Etech' },
