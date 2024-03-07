@@ -17,7 +17,7 @@
             </div>
         </div>
         <!-- content -->
-        <div :class="[marginTop, textPosition]" class=" z-50 relative w-full mx-auto max-w-7xl px-6 lg:px-8">
+        <div :class="[marginTop, textPosition]" class=" z-50 relative w-full mx-auto max-w-7xl md:px-8 px-0">
             <h1 v-if="blok.title" :class="[titleFont, textWidth]" class="text-4xl font-bold text-white"> {{ blok.title }}</h1>
 
             <p :class="[textWidth]" v-if="blok.desc" class="mt-6 text-lg leading-8 text-white"> {{ blok.desc }}</p>
@@ -73,7 +73,7 @@ const marginTop = computed(() => {
 
 const heightClass = computed(() => {
     return props.blok.height === 'mobile_long' ? 'h-[350px] sm:h-[500px]'
-        : props.blok.height === '800' ? 'h-[600px] sm:h-[800px]'
+        : props.blok.height === '800' ? 'h-[450px] sm:h-[700px]'
             : ''
 })
 
