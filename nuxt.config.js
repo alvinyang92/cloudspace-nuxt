@@ -30,13 +30,13 @@ export default defineNuxtConfig({
   //modules
   modules: [
     [
-      '@storyblok/nuxt', 
+      '@storyblok/nuxt',
       {
         accessToken: 'DpBofGpsODYuQk0AFLdQhQtt',
-          cache: {
-            clear: "auto",
-            type: "memory",
-          },
+        cache: {
+          clear: "auto",
+          type: "memory",
+        },
         //  bridge: true
         // apiOptions: {
         //   region: "us" // When creating your space in US region (EU default)
@@ -60,54 +60,54 @@ export default defineNuxtConfig({
   //   // apiOptions: { cache: { type: 'memory' } },
   // },
 
-    //  hooks: {
-    //    'vite:extendConfig': (config, { isClient, isServer }) => {
-    //      if (isClient) {
-    //        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler'
-    //      }
-    //    },
-    //  },
+  //  hooks: {
+  //    'vite:extendConfig': (config, { isClient, isServer }) => {
+  //      if (isClient) {
+  //        config.resolve.alias.vue = 'vue/dist/vue.esm-bundler'
+  //      }
+  //    },
+  //  },
 
   //sitemap 
-    nitro: {
-         prerender: {
-           crawlLinks: true,
-          // autoSubfolderIndex: true,
-          // routes: ['/', '/articles/**'],
-         },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      // autoSubfolderIndex: true,
+      // routes: ['/', '/articles/**'],
+    },
 
-  //    // hooks: {
-  //    //   async 'nitro:config'(nitroConfig) {
-  //    //     if (!nitroConfig || nitroConfig.dev) {
-  //    //       return
-  //    //     }
-  //    //     const token = "6kZ1lLQDxyAZAeeQvkxrAQtt"
+    //    // hooks: {
+    //    //   async 'nitro:config'(nitroConfig) {
+    //    //     if (!nitroConfig || nitroConfig.dev) {
+    //    //       return
+    //    //     }
+    //    //     const token = "6kZ1lLQDxyAZAeeQvkxrAQtt"
 
-  //    //     let cache_version = 0
+    //    //     let cache_version = 0
 
-  //    //     // other routes that are not in Storyblok with their slug.
-  //    //     let routes = ['/'] // adds home directly but with / instead of /home
-  //    //     try {
-  //    //       const result = await fetch(`https://api.storyblok.com/v2/cdn/spaces/me?token=${token}`)
+    //    //     // other routes that are not in Storyblok with their slug.
+    //    //     let routes = ['/'] // adds home directly but with / instead of /home
+    //    //     try {
+    //    //       const result = await fetch(`https://api.storyblok.com/v2/cdn/spaces/me?token=${token}`)
 
-  //    //       if (!result.ok) {
-  //    //         throw new Error('Could not fetch Storyblok data')
-  //    //       }
-  //    //       // timestamp of latest publish
-  //    //       const space = await result.json()
-  //    //       cache_version = space.space.version
+    //    //       if (!result.ok) {
+    //    //         throw new Error('Could not fetch Storyblok data')
+    //    //       }
+    //    //       // timestamp of latest publish
+    //    //       const space = await result.json()
+    //    //       cache_version = space.space.version
 
-  //    //       // Recursively fetch all routes and set them to the routes array
-  //    //       await fetchStories(routes, cache_version)
-  //    //       // Adds the routes to the prerenderer
-  //    //       nitroConfig.prerender.routes.push('...slug')
-  //    //     } catch (error) {
-  //    //       console.error(error)
-  //    //     }
-  //    //   },
+    //    //       // Recursively fetch all routes and set them to the routes array
+    //    //       await fetchStories(routes, cache_version)
+    //    //       // Adds the routes to the prerenderer
+    //    //       nitroConfig.prerender.routes.push('...slug')
+    //    //     } catch (error) {
+    //    //       console.error(error)
+    //    //     }
+    //    //   },
 
 
- },
+  },
 
   //  },
   // site: { url: 'https://packlyft-final.vercel.app', },
@@ -133,31 +133,31 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en-US', prefix: 'og: https://ogp.me/ns#' },
-      // title: 'Home - Wenjie & Co. Advocates & Solicitors',
+      title: 'Cloud-Space – Home',
       meta: [
 
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes' },
 
-      //  { name: 'description', content: 'High Satisfaction Rate See what our satisfied clients say about us Your Objective is Our Priority Your objective and your concerns are what we focus on. Be it time, cost, or anything bothering you. Transparent Fee We tell you how much is the fee and how it is charged. No hidden fees.' },
+        { name: 'description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
         { name: 'robots', content: 'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large' },
 
         //twitter
-        // { name: 'twitter:title', content: 'Home - Wenjie & Co. Advocates & Solicitors' },
-        // { name: 'twitter:description', content: 'High Satisfaction Rate See what our satisfied clients say about us Your Objective is Our Priority Your objective and your concerns are what we focus on. Be it time, cost, or anything bothering you. Transparent Fee We tell you how much is the fee and how it is charged. No hidden fees.' },
+        { name: 'twitter:title', content: 'Cloud-Space – Home' },
+        { name: 'twitter:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
         { name: 'twitter:card', content: 'summary_large_image', },
-      { property: 'twitter:image', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
+        { property: 'twitter:image', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
 
         //og 
         { property: 'og:locale', content: 'en-US' },
         { property: 'og:type', content: 'website' },
-         { property: 'og:image:secure_url', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
-         { property: 'og:image', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
+        { property: 'og:image:secure_url', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
+        { property: 'og:image', content: 'https://a.storyblok.com/f/278050/32x32/a99e4835aa/favicon.svg/m/' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { property: 'og:image:alt', content: 'Etech' },
         { property: 'og:image:type', content: 'image/png' },
-        //  { property: 'og:description', content: 'High Satisfaction Rate See what our satisfied clients say about us Your Objective is Our Priority Your objective and your concerns are what we focus on. Be it time, cost, or anything bothering you. Transparent Fee We tell you how much is the fee and how it is charged. No hidden fees.' },
+        { property: 'og:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
       ],
       link: [
         //favicon

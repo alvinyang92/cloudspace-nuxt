@@ -18,8 +18,8 @@ const link = props.raw.full_slug
 useHead({
   title: `${page_title}`,
   meta: [
-  { property: 'twitter:title', content: `${title}` },
-        { property: 'og:title', content: `${title}` },
+    { property: 'twitter:title', content: `${title}` },
+    { property: 'og:title', content: `${title}` },
     { name: 'description', content: desc },
     { name: 'twitter:description', content: desc },
     // { property: 'twitter:image', content: seoimg },
