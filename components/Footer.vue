@@ -300,7 +300,7 @@
           <!-- start -->
           <div class="sm:flex sm:items-center sm:divide-x sm:divide-gray-300">
             <div class="mt-2">
-              <p class="mt-4 sm:mt-8 sm:pr-3 text-xs leading-5 md:order-1 md:mt-0"> © Copyright {{ new Date().getFullYear() }} Cloud Space Sdn. Bhd.(Co. Reg. 1482674-H)</p>
+              <p class="mt-4 sm:mt-8 sm:pr-3 text-xs leading-5 md:order-1 md:mt-0"> ©Copyright {{ new Date().getFullYear() }} Cloud Space Sdn. Bhd.(Co. Reg. 1482674-H)</p>
             </div>
 
             <!-- <p class="mt-8 text-xs leading-5 text-gray-400 md:order-1 md:mt-0">|</p> -->
@@ -320,7 +320,6 @@
           </div>
         </div>
       </div>
-
     </div>
   </footer>
 </template>
