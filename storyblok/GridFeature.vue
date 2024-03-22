@@ -1,5 +1,5 @@
 <template>
-  <div v-editable="blok" :class="[bgcolorClasses, paddingClasses, paddingBottomClasses, paddingTopClasses]" class="py-16 pb-16 isolate relative">
+  <div v-if="blok.section_hide" v-editable="blok" :class="[bgcolorClasses, paddingClasses, paddingBottomClasses, paddingTopClasses]" class="py-16 pb-16 isolate relative">
 
     <!-- gradient-bg -->
     <div :class="gradientbgClasses" class="">

@@ -22,6 +22,12 @@
       </div>
       <!-- stats -->
       <h3 :class="[textColor]" v-if="blok.stats" class="text-3xl tracking-tight sm:text-5xl">{{ blok.stats }}</h3>
+      <!-- badege -->
+      <div v-if="blok.badge" class="mb-2">
+        <span class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-cs-light-blue ring-1 ring-inset ring-cs-light-blue/20">
+          {{ blok.badge }}
+        </span>
+      </div>
       <!-- title -->
       <h3 :class="[textColor]" class="font-bold text-xl" v-if="blok.title">{{ blok.title }}</h3>
     </div>

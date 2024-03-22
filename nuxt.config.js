@@ -42,7 +42,7 @@ export default defineNuxtConfig({
         //   region: "us" // When creating your space in US region (EU default)
         // }
       },
-    ], '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/robots', 'nuxt-simple-sitemap'
+    ], '@nuxt/image', '@nuxtjs/tailwindcss', '@nuxtjs/robots', 'nuxt-simple-sitemap',
   ],
 
 
