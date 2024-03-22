@@ -312,7 +312,7 @@
       </div>
 
       <!-- copyright tnc -->
-      <div class="mt-6 sm:mt-8 border-t border-gray-500 pt-2  sm:pt-6 md:flex md:items-center md:justify-between">
+      <div class="mt-6 sm:mt-8 border-t border-gray-300 pt-2  sm:pt-6 md:flex md:items-center md:justify-between">
         <div class="flex flex-col md:flex-row gap-3 justify-start sm:justify-between w-full">
           <div class="flex flex-col md:flex-row gap-3">
             <!-- start -->
@@ -321,7 +321,7 @@
                 <p class="mt-4 sm:mt-8 sm:pr-3 text-xs leading-5 md:order-1 md:mt-0"> ©Copyright {{ new Date().getFullYear() }} Cloud Space Sdn. Bhd.(Co. Reg. 1482674-H)</p>
               </div>
             </div>
-            
+
             <!-- end -->
             <div class="flex gap-3 items-center justify-center">
               <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
