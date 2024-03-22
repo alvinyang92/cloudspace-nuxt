@@ -35,5 +35,6 @@ module.exports = {
     require('@tailwindcss/forms'),
     require("flowbite/plugin"),
     require("preline/plugin"),
+
   ],
 }

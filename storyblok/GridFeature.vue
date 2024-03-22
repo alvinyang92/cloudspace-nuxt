@@ -52,6 +52,10 @@
         <div :class="[maxWidth]" class="space-y-14 ">
           <StoryblokComponent v-for="blok in blok.left_right_card" :key="blok._uid" :blok="blok" />
         </div>
+        <!-- tab -->
+        <div v-if="blok.grid_tab" :class="[gridClasses, mobileGridClasses, maxWidth]" class="grid grid-cols-1 gap-x-8 gap-y-8">
+          <StoryblokComponent v-for="blok in blok.grid_tab" :key="blok._uid" :blok="blok" />
+        </div>
       </div>
 
       <!-- button -->

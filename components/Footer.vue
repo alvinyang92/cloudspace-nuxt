@@ -2,7 +2,7 @@
   <footer class="bg-white relative ">
     <h2 class="sr-only">Footer</h2>
     <!-- whatsapp button -->
-    <div class="bottom-0 right-0 fixed">
+    <!-- <div class="bottom-0 right-0 fixed">
 
       <div class="w-full flex justify-end">
 
@@ -30,7 +30,7 @@
           </div>
         </nuxt-link>
       </div>
-    </div>
+    </div> -->
 
     <!-- footer -->
     <div class="mx-auto max-w-7xl px-6 pb-8 pt-12 lg:px-8 ">
@@ -334,14 +334,15 @@
             </div>
           </div>
 
-          <nuxt-link to="#top" class="">
-            <div class="rounded-full w-auto p-1 flex items-center justify-center bg-cs-light-blue">
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-              </svg>
-
-            </div>
-          </nuxt-link>
+          <div class="my-auto">
+            <nuxt-link to="#top" class="">
+              <div class="rounded-full w-auto p-1 flex items-center justify-center bg-cs-light-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
+              </div>
+            </nuxt-link>
+          </div>
         </div>
       </div>
     </div>
