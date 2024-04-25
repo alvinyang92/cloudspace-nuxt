@@ -1,5 +1,7 @@
 <template>
   <!-- <pre>{{ blok}}</pre> -->
+  <NavBlue v-if="blok.nav_blue"></NavBlue>
+  <NavWhite v-if="blok.nav_white"></NavWhite>
   <div v-editable="blok">
     <StoryblokComponent v-for="blok in blok.body" :key="blok._uid" :blok="blok" />
   </div>

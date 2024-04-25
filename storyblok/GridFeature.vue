@@ -1,17 +1,34 @@
 <template>
+  <!-- <pre>{{ blok.lightbg_show }}</pre> -->
   <div v-if="blok.section_hide" v-editable="blok" :class="[bgcolorClasses, paddingClasses, paddingBottomClasses, paddingTopClasses]" class="py-16 pb-16 isolate relative">
 
     <!-- gradient-bg -->
     <div :class="gradientbgClasses" class="">
       <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
-        <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#242565] to-[#89b7fc]"
+        <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#1A96D2] to-[#8DE3FF]"
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
       <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end" aria-hidden="true">
-        <div class="ml-[-22rem] aspect-[1313/650] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#242565] to-[#89b7fc] xl:ml-0 xl:mr-[calc(50%-12rem)]"
+        <div class="ml-[-22rem] aspect-[1313/650] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-[#1A96D2] to-[#8DE3FF] xl:ml-0 xl:mr-[calc(50%-12rem)]"
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
     </div>
+
+    <!-- light bg -->
+    <div :class="lightbgClasses" class=" opacity-30 sm:opacity-25">
+      <svg class="absolute inset-x-0 top-[4rem] sm:left-[-380px] -z-10 h-[60rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
+        <defs>
+          <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
+            <path d="M.5 200V.5H200" fill="none"></path>
+          </pattern>
+        </defs>
+        <svg x="50%" y="-1" class="overflow-visible fill-gray-50/40">
+          <path d="M-200 0h201v201h-201Z M600 0h201v201h-201Z M-400 600h201v201h-201Z M200 800h201v201h-201Z" stroke-width="0"></path>
+        </svg>
+        <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"></rect>
+      </svg>
+    </div>
+
 
     <div :class="leftRightPadding" class="mx-auto max-w-7xl px-6 lg:px-8">
       <!-- title -->
@@ -168,6 +185,13 @@ const paddingBottomClasses = computed(() => {
 const gradientbgClasses = computed(() => {
   return props.blok.gradient_color === 'hidden' ? 'hidden'
     : props.blok.gradient_color === 'show' ? 'block'
+      : ''
+})
+
+const lightbgClasses = computed(() => {
+  return props.blok.lightbg === 'hidden' ? 'hidden'
+  : props.blok.lightbg === 'show' ? 'block'
+    // : props.blok.gradient_color === 'show' ? 'block'
       : ''
 })
 
