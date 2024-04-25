@@ -4,7 +4,7 @@
 
     <!-- gradient-bg -->
     <div :class="gradientbgClasses" class="">
-      <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
+      <div class="absolute inset-x-0 top-1/2 z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl" aria-hidden="true">
         <div class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-[#1A96D2] to-[#8DE3FF]"
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
@@ -13,10 +13,9 @@
           style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
       </div>
     </div>
-
     <!-- light bg -->
-    <div :class="lightbgClasses" class=" opacity-30 sm:opacity-25">
-      <svg class="absolute inset-x-0 top-[4rem] sm:left-[-380px] -z-10 h-[60rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
+    <!-- <div :class="lightbgClasses" class="z-10 opacity-30 sm:opacity-25">
+      <svg class="absolute inset-x-0 top-[4rem] sm:left-[-380px] z-10 h-[60rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
         <defs>
           <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
             <path d="M.5 200V.5H200" fill="none"></path>
@@ -27,10 +26,11 @@
         </svg>
         <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"></rect>
       </svg>
-    </div>
+    </div> -->
 
 
-    <div :class="leftRightPadding" class="mx-auto max-w-7xl px-6 lg:px-8">
+
+    <div :class="leftRightPadding" class="z-[990] mx-auto max-w-7xl px-6 lg:px-8">
       <!-- title -->
       <div :class="[textPosition]" class="mx-auto max-w-2xl text-center">
         <h2 :class="[textColor]" v-if="blok.label_title" class="text-base font-semibold leading-7">{{ blok.label_title }}</h2>
