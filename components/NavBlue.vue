@@ -7,7 +7,7 @@
         <!-- DESKTOP logo -->
         <!-- clodu-space-logo -->
         <div class="px-2">
-          <nuxt-link to="https://cloud-space.co/" target="_blank" class="-m-1.5 p-1.5 focus:outline-none">
+          <nuxt-link to="/" class="-m-1.5 p-1.5 focus:outline-none">
             <span class="sr-only">Cloud Space</span>
             <!-- <svg alt="E-Tech Logo" width="42" height="37" viewBox="0 0 224 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="108.769" width="32.0826" height="113.715" rx="15" transform="rotate(69.8706 108.769 0)" fill="#FF1010" />

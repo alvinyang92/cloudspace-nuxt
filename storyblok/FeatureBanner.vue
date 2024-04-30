@@ -28,7 +28,7 @@
         </div>
 
         <!-- wave wave bottom -->
-        <div class="absolute inset-x-0 bottom-0">
+        <div class="absolute z-30 inset-x-0 bottom-0">
             <svg viewBox=" 0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                 <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                     <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -48,7 +48,7 @@
         </div>
 
         <!-- overlay -->
-        <div :class="[heightClass, overlay]" class="absolute inset-0 overflow-hidden bg-black/40 z-30 "></div>
+        <div :class="[heightClass, overlay]" class="absolute inset-0 overflow-hidden bg-black/30 z-10 "></div>
 
         <!-- google cloud partners -->
         <div :class="[hiddenBlock]" class="text-white absolute bottom-3 right-5 overflow-hidden z-[90]">
@@ -132,7 +132,7 @@ const bgcolorClasses = computed(() => {
 const heightClass = computed(() => {
     return props.blok.height === 'mobile_long' ? 'h-[350px] sm:h-[500px]'
         : props.blok.height === '800' ? 'h-[450px] sm:h-[700px]'
-            : props.blok.height === 'special' ? 'xl:h-[50rem] lg:h-[40rem] sm:h-[36rem]'
+            : props.blok.height === 'special' ? 'h-[350px] xl:h-[50rem] lg:h-[40rem] sm:h-[36rem]'
                 : ''
 })
 
