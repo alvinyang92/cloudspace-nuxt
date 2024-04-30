@@ -280,7 +280,7 @@
                 </div>
                 <!-- mail -->
                 <div class="text-sm leading-6 hover:text-[#1A96D2]">
-                  <nuxt-link to="mailto:sales@cloud-space.coy" rel="noopener noreferrer" class="">sales@cloud-space.coy</nuxt-link>
+                  <nuxt-link to="mailto:sales@cloud-space.co" rel="noopener noreferrer" class="">sales@cloud-space.co</nuxt-link>
                 </div>
                 <!-- tel -->
                 <div class="text-sm leading-6 hover:text-[#1A96D2]">
@@ -312,7 +312,7 @@
       </div>
 
       <!-- copyright tnc -->
-      <div class="mt-6 sm:mt-8 border-t border-gray-300 pt-2  sm:pt-6 md:flex md:items-center md:justify-between">
+      <div class="mt-3 sm:mt-8 border-t border-gray-300 pt-2  sm:pt-6 md:flex md:items-center md:justify-between">
         <div class="flex flex-col md:flex-row gap-3 justify-start sm:justify-between w-full">
           <div class="flex flex-col md:flex-row gap-3">
             <!-- start -->
@@ -323,9 +323,9 @@
             </div>
 
             <!-- end -->
-            <div class="flex gap-3 items-center justify-center">
+            <div class="flex gap-3 items-end">
               <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
-                <nuxt-img class="w-[120px] object-cover bg-white p-0.5 rounded-lg" preload src="https://a.storyblok.com/f/266925/667x270/a44aac83c9/google-cloud-partner-footer.png/m/600x0" alt="google cloud partner" width="900" height="700" sizes="xl:100vw lg:50vw md:400px sm:400px" />
+                <nuxt-img class="w-[120px] object-cover bg-white p-0.5 rounded-lg" preload src="https://a.storyblok.com/f/278050/666x147/8f8424579b/google-cloud-partner-footer.jpg" alt="google cloud partner" width="900" height="700" sizes="xl:100vw lg:50vw md:400px sm:400px" />
               </nuxt-link>
 
               <nuxt-link target="_blank" to="https://www.linkedin.com/company/cloud-space-co">
@@ -334,7 +334,19 @@
             </div>
           </div>
 
-          <div class="my-auto">
+          <div class="flex items-end justify-end">
+            <nuxt-link to="#top">
+              <button type="button" class="rounded-full bg-cs-light-blue p-1 text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cs-light-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                  </svg>
+              </button>
+            </nuxt-link>
+          </div>
+          
+
+          <!--back to top -->
+          <!-- <div class="">
             <nuxt-link to="#top" class="">
               <div class="rounded-full w-auto p-1 flex items-center justify-center bg-cs-light-blue">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
@@ -342,7 +354,8 @@
                 </svg>
               </div>
             </nuxt-link>
-          </div>
+          </div> -->
+
         </div>
       </div>
     </div>

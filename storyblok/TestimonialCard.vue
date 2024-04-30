@@ -6,7 +6,8 @@
                 <article :class="[textColor]" v-html="resolvedRichText" class="prose max-w-none">
                 </article>
             </blockquote>
-            <figcaption class="mt-10 flex flex-col sm:flex-row items-start gap-x-0 sm:items-center sm:gap-x-3">
+
+            <figcaption v-if=" blok.name" class="mt-10 flex flex-col sm:flex-row items-start gap-x-0 sm:items-center sm:gap-x-3">
                 <nuxt-img v-if="blok.image?.filename" class="h-14 w-14 rounded-full bg-gray-50" :src="blok.image.filename + '/m/'" :alt="blok.image.alt" width="256" height="256" />
 
                 <div class="mt-4 sm:mt-0 text-base">
@@ -16,6 +17,7 @@
                     <nuxt-img v-if="blok.logo?.filename" class="w-[40%] mt-5" :src="blok.logo.filename + '/m/'" :alt="blok.logo.alt" width="256" height="256" />
                 </div>
             </figcaption>
+
         </figure>
     </div>
 </template>
@@ -30,7 +32,7 @@ const bgcolorClasses = computed(() => {
     return props.blok.bg_color === 'beige' ? 'bg-[#FAF7EF]'
         : props.blok.bg_color === 'blue' ? 'bg-[#092A48]'
             : props.blok.bg_color === 'white' ? 'bg-white'
-                : props.blok.bg_color === 'light-blue' ? 'bg-[#EDF3F8]'
+                : props.blok.bg_color === 'light-blue' ? 'bg-[#DFF5FF]'
                     : ''
 })
 

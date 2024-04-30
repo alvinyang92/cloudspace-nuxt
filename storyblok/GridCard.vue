@@ -32,9 +32,9 @@
       <h3 :class="[textColor]" class="font-bold text-xl" v-if="blok.title">{{ blok.title }}</h3>
     </div>
     <!--desc -->
-    <div class="mt-2 flex flex-auto flex-col text-sm leading-6 text-gray-600">
+    <div class="mt-2 flex flex-auto flex-col leading-6 text-gray-600">
       <!-- desc -->
-      <p :class="[textColor]" v-if="blok.desc" class="flex-auto line-clamp-3">{{ blok.desc }}</p>
+    <p :class="[textColor]" v-if="blok.desc" class="">{{ blok.desc }}</p>
 
       <!-- button -->
       <div class="mt-2" v-if="blok.link_title">
