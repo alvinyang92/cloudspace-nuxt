@@ -31,6 +31,7 @@
       <!-- title -->
       <h3 :class="[textColor]" class="font-bold text-xl" v-if="blok.title">{{ blok.title }}</h3>
     </div>
+    
     <!--desc -->
     <div class="mt-2 flex flex-auto flex-col leading-6 text-gray-600">
       <!-- desc -->
