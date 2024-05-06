@@ -5,10 +5,10 @@
       <!-- image -->
       <div class="mb-5">
         <nuxt-img 
-        v-if="pacard.banner_image?.filename" 
+        v-if="pacard.thumbs?.filename" 
         class="rounded-lg h-[200px] object-cover w-full" 
-        :src="pacard.banner_image.filename + '/m/800x0'" 
-        :alt="pacard.banner_image.alt" 
+        :src="pacard.thumbs.filename + '/m/800x0'" 
+        :alt="pacard.thumbs.alt" 
         sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw"
         width="384" 
         height="200" 
@@ -17,14 +17,14 @@
       </div>
       <!-- dt - title -->
       <div class="flex flex-col items-left gap-x-3">
-        <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">{{ pacard.banner_title }}</h3>
+        <h3 class="text-lg font-semibold leading-6 text-gray-900 group-hover:text-gray-600">{{ pacard.title }}</h3>
       </div>
       <!-- dd - desc -->
       <div class="flex flex-auto flex-col">
         <!-- desc -->
         <p 
-        v-if="pacard.featured_desc" 
-        class="mt-3 flex-auto line-clamp-3 text-sm text-gray-600">{{ pacard.featured_desc }}
+        v-if="pacard.meta_desc" 
+        class="mt-3 flex-auto line-clamp-3 text-sm text-gray-600">{{ pacard.meta_desc }}
       </p>
         <!-- cta -->
         <div class="mt-4 text-sm font-semibold leading-6 ">Learn More<span aria-hidden="true" class="ml-1">→</span>
