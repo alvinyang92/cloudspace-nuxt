@@ -6,13 +6,18 @@
       <nuxt-img :class="heightClass" class="rounded-lg h-[200px] object-cover w-full" :src="blok.image.filename + '/m/600x0'" :alt="blok.image.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
 
+    <!-- rounded image -->
+    <div v-if="blok.image_rounded?.filename" class="mb-5 w-full mx-auto">
+      <nuxt-img  class="h-[200px] w-[200px] object-cover  rounded-full mx-auto" :src="blok.image_rounded.filename + '/m/600x0'" :alt="blok.image_rounded.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
+    </div>
+
     <!-- image-testi -->
     <div v-if="blok.image_testi?.filename" class="mb-5">
       <nuxt-img :class="heightClass" class="rounded-lg h-[200px] object-cover w-full shadow-lg ring-1 ring-gray-900/5" :src="blok.image_testi.filename + '/m/1000x0'" :alt="blok.image_testi.alt" width="1000" height="600" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
 
     <!--title -->
-    <div class="flex flex-col items-left gap-x-3 text-base font-semibold leading-7 text-gray-900">
+    <div :class="[textPosition]" class="flex flex-col items-left gap-x-3 text-base font-semibold leading-7 text-gray-900">
       <!-- iconshow? -->
       <div class="">
         <div v-if="blok.icon_image?.filename" class=" mb-6 flex h-12 w-12 items-center justify-center rounded-lg bg-etech-blue">
@@ -33,7 +38,7 @@
     </div>
     
     <!--desc -->
-    <div class="mt-2 flex flex-auto flex-col leading-6 text-gray-600">
+    <div :class="[textPosition]" class="mt-2 flex flex-auto flex-col leading-6 text-gray-600">
       <!-- desc -->
     <p :class="[textColor]" v-if="blok.desc" class="">{{ blok.desc }}</p>
 
@@ -95,6 +100,12 @@ const heightClass = computed(() => {
 
 const textColor = computed(() => {
   return props.blok.text_color === 'white' ? '!text-white'
+    // : props.blok.text_color === 'white' ? 'text-gray-300'
+    : ''
+})
+
+const textPosition = computed(() => {
+  return props.blok.text_position === 'text-center' ? '!text-center'
     // : props.blok.text_color === 'white' ? 'text-gray-300'
     : ''
 })

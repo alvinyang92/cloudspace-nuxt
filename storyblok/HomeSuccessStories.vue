@@ -31,7 +31,6 @@
 
 
     <div :class="leftRightPadding" class="z-[990] mx-auto max-w-7xl px-6 lg:px-8">
-      
       <!-- title -->
       <div :class="[textPosition]" class="mx-auto max-w-2xl text-center mb-10">
         <h2 :class="[textColor]" v-if="blok.label_title" class="text-base font-semibold leading-7">{{ blok.label_title }}</h2>
@@ -51,7 +50,7 @@
       <!-- card -->
       <div :class="marginTopClasses" class="mx-auto max-w-2xl lg:max-w-none">
         <!-- grid card -->
-        <div :class="[gridClasses, maxWidth]" class="grid gap-x-8 gap-y-8 sm:gap-y-14 ">
+        <div :class="[gridClasses, maxWidth]" class="grid gap-x-8 gap-y-8 ">
           <!-- grid card -->
           <StoryblokComponent v-for="blok in blok.grid_card" :key="blok._uid" :blok="blok" />
           <!-- pa card -->
@@ -99,7 +98,7 @@ const { data } = await storyblokApi.get('cdn/stories', {
   starts_with: 'success-stories',
   is_startpage: false,
   // sort_by: 'content.date:asc',
-  // per_page: 6,
+  per_page: 3,
 })
 all_pa.value = data.stories
 

@@ -98,6 +98,7 @@ const page_title = props.blok.page_title
 const title = props.blok.meta_title
 const desc = props.blok.meta_desc
 const seoimg = props.blok.thumbs
+const tag = props.blok.tag
 const link = props.raw.full_slug
 
 useHead({
