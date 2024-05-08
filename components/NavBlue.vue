@@ -294,15 +294,15 @@
                   </DisclosurePanel>
                 </Disclosure> -->
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-[#1A96D2]">About Us</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/about" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">About Us</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/solution" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-[#1A96D2]">Solution</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/solution" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Solution</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/success-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-[#1A96D2]">Success Stories</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/success-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Success Stories</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/partners" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-[#1A96D2]">Partners</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/partners" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Partners</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/news" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:text-[#1A96D2]">News</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/news" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">News</nuxt-link>
 
                 <!-- <nuxt-link @click="mobileMenuOpen = false" to="/calculator" class="-mx-3 block rounded-lg px-3 py-2 text-base 
                 font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Calculator</nuxt-link> -->
