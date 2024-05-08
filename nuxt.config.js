@@ -71,9 +71,9 @@ export default defineNuxtConfig({
   //sitemap 
   nitro: {
      prerender: {
-      //  crawlLinks: true,
-       // autoSubfolderIndex: true,
-       // routes: ['/', '/articles/**'],
+       crawlLinks: true,
+      //  autoSubfolderIndex: true,
+       routes: ['/'],
      },
 
     //    // hooks: {

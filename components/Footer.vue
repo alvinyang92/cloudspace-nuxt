@@ -1,4 +1,6 @@
 <template>
+
+
   <footer class="bg-white relative ">
     <h2 class="sr-only">Footer</h2>
     <!-- whatsapp button -->
@@ -33,7 +35,7 @@
     </div> -->
 
     <!-- footer -->
-    <div class="mx-auto max-w-7xl px-6 pb-8 pt-12 lg:px-8 ">
+    <div class="mx-auto max-w-7xl px-6 pb-8  pt-8 sm:pt-12 lg:px-8 ">
       <!-- row top -->
       <div class="xl:grid xl:grid-cols-3 xl:gap-8">
         <!-- col 1 -->
@@ -201,7 +203,7 @@
 
             </nuxt-link>
           </div>
-          <p class="text-sm leading-6">Cloud Automation Transforming & Streamlining Cost Optimization</p>
+          <p class="text-sm leading-6">We move people to the cloud!</p>
         </div>
         <!-- col 2 -->
         <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
@@ -210,24 +212,12 @@
             <div>
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Pages</h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">About Us</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Solution</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Solution</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Success Stories</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Partners</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Events</nuxt-link>
-                </li>
+                <li><nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">About Us</nuxt-link></li>
+                <li><nuxt-link to="/solution" class="text-sm leading-6 hover:text-[#1A96D2]">Solution</nuxt-link></li>
+                <li><nuxt-link to="/success-stories" class="text-sm leading-6 hover:text-[#1A96D2]">Success Stories</nuxt-link></li>
+                <li><nuxt-link to="/partners" class="text-sm leading-6 hover:text-[#1A96D2]">Partners</nuxt-link></li>
+
+
 
                 <!-- <li>
                   <nuxt-link to="/testimonials" class="text-sm leading-6  hover:text-[#1A96D2]">Testimonials</nuxt-link>
@@ -242,27 +232,8 @@
             <div class="mt-10 md:mt-0">
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Support</h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6 hover:text-[#1A96D2]">Contact Us</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Blog</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">Events</nuxt-link>
-                </li>
-                <!-- <li>
-                  <nuxt-link to="https://cloud-space.co/" target="_blank" class="text-sm leading-6  hover:text-[#1A96D2]">Cloud Space</nuxt-link>
-                </li> -->
-                <!-- <li>
-                  <nuxt-link to="/statute" class="text-sm leading-6  hover:text-[#1A96D2]">Statute</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/calculator/stamp-duty-calculator" class="text-sm leading-6  hover:text-[#1A96D2]">Stamp Duty Calculator</nuxt-link>
-                </li>
-                <li>
-                  <nuxt-link to="/calculator/tenancy-agreement-stamp-duty" class="text-sm leading-6  hover:text-[#1A96D2]">Tenancy Agreement Stamp Duty Calculator </nuxt-link>
-                </li> -->
+                <li><nuxt-link to="/contact" class="text-sm leading-6 hover:text-[#1A96D2]">Contact Us</nuxt-link></li>
+                <li><nuxt-link to="/news" class="text-sm leading-6 hover:text-[#1A96D2]">News</nuxt-link></li>
               </ul>
             </div>
 
@@ -338,12 +309,12 @@
             <nuxt-link to="#top">
               <button type="button" class="rounded-full bg-cs-light-blue p-1 text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cs-light-blue">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-5 h-5 text-white">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
-                  </svg>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 15.75 7.5-7.5 7.5 7.5" />
+                </svg>
               </button>
             </nuxt-link>
           </div>
-          
+
 
           <!--back to top -->
           <!-- <div class="">
