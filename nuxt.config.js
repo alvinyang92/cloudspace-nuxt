@@ -70,11 +70,11 @@ export default defineNuxtConfig({
 
   //sitemap 
   nitro: {
-    // prerender: {
-    //   crawlLinks: true,
-    //   // autoSubfolderIndex: true,
-    //   // routes: ['/', '/articles/**'],
-    // },
+     prerender: {
+       crawlLinks: true,
+       // autoSubfolderIndex: true,
+       // routes: ['/', '/articles/**'],
+     },
 
     //    // hooks: {
     //    //   async 'nitro:config'(nitroConfig) {

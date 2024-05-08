@@ -1,5 +1,5 @@
 <template>
-<NavWhite></NavWhite>
+  <NavWhite></NavWhite>
   <div v-editable="blok" class="relative">
 
 
@@ -9,6 +9,11 @@
 
         <!-- title | category -->
         <div class="md:w-[50%] w-full ">
+          <!-- tag -->
+          <div class="mb-6">
+            <span class="inline-flex items-center rounded-full bg-blue-50 px-2 py-1 text-xs font-medium text-cs-light-blue ring-1 ring-inset ring-cs-light-blue/20">{{ blok.tag }}</span>
+          </div>
+
           <!-- image  -->
           <div class="flex gap-5 items-center">
             <nuxt-img v-if="blok.image_client_1?.filename" class=" object-contain" :src="blok.image_client_1.filename + '/m/'" alt="" width="158" height="48" />
@@ -16,6 +21,7 @@
           </div>
           <h1 v-if="blok.title" class="text-4xl font-bold sm:text-6xl mt-5"> {{ blok.title }}</h1>
           <p v-if="blok.small_title" class="mt-3">{{ blok.small_title }}</p>
+
         </div>
 
         <!-- -------------------------------------- -->
@@ -111,7 +117,7 @@ useHead({
     //  { property: 'twitter:image', content: seoimg },
     //  { property: 'og:image:secure_url', content: seoimg },
     //  { property: 'og:image', content: seoimg },
-     { property: 'og:image:type', content: 'image/jpg', },
+    { property: 'og:image:type', content: 'image/jpg', },
     { property: 'og:description', content: desc },
   ],
   link: [
