@@ -1,6 +1,6 @@
 <template>
   <!-- <header class="bg-white sticky top-0  z-[9999] max-w-none"> -->
-  <header class="bg-cs-light-blue z-[9999] max-w-none sticky top-0">
+  <header class="bg-cs-light-blue z-[9999] max-w-none sticky top-0"> 
     <nav class="bg-cs-light-blue w-full " aria-label="Global">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-6 lg:px-8 h-[80px]">
 

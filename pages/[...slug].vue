@@ -12,7 +12,7 @@ const resolveRelations = ['article-page.category', 'article-page.article_post', 
 const story = await useAsyncStoryblok(
   slug && slug.length > 0 ? slug.join('/') : 'home',
   {
-    version: 'draft',
+    version: 'published',
       resolve_relations: resolveRelations,
       // resolve_links: 'url'
   },
