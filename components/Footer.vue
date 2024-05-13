@@ -212,7 +212,7 @@
             <div>
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Pages</h3>
               <ul role="list" class="mt-6 space-y-4">
-                <li><nuxt-link to="/" class="text-sm leading-6  hover:text-[#1A96D2]">About Us</nuxt-link></li>
+                <li><nuxt-link to="/about" class="text-sm leading-6  hover:text-[#1A96D2]">About Us</nuxt-link></li>
                 <li><nuxt-link to="/solution" class="text-sm leading-6 hover:text-[#1A96D2]">Solution</nuxt-link></li>
                 <li><nuxt-link to="/success-stories" class="text-sm leading-6 hover:text-[#1A96D2]">Success Stories</nuxt-link></li>
                 <li><nuxt-link to="/partners" class="text-sm leading-6 hover:text-[#1A96D2]">Partners</nuxt-link></li>

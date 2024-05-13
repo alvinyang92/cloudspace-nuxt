@@ -179,7 +179,7 @@
         <div class="fixed inset-0 z-10 " />
         <DialogPanel class="fixed inset-y-0 right-0 z-[9999] w-full overflow-y-auto bg-cs-light-blue px-8 pt-3 pb-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <!-- mobile logo -->
-          <div class="flex items-center justify-between mt-[2px] ">
+          <div class="flex items-center justify-between mt-[2.5px] ml-[1px]">
             <nuxt-link to="/" class="">
               <span class="sr-only">Your Company</span>
               <svg alt="Cloud Space Logo" width="70" height="53" viewBox="0 0 386 294" fill="none" xmlns="http://www.w3.org/2000/svg">
