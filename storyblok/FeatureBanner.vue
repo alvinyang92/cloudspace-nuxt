@@ -3,7 +3,7 @@
     <div id="top" v-editable="blok" :class="[heightClass, bgcolorClasses]" class="relative flex flex-col items-center justify-center overflow-hidden my-auto isolate px-6 py-24 pt-10 xl:py-32 lg:px-8">
 
         <!-- light bg -->
-        <div class=" opacity-30 sm:opacity-25">
+        <!-- <div class=" opacity-30 sm:opacity-25">
             <svg class="absolute inset-x-0 top-[-4.5rem] left-[10px] sm:left-[-380px] -z-10 h-[60rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
                 <defs>
                     <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
@@ -17,7 +17,7 @@
             </svg>
 
 
-        </div>
+        </div> -->
 
         <!-- image -->
         <nuxt-img :class="[heightClass, imgPosition]" v-if="blok.image?.filename" class="absolute inset-0 -z-10 overflow-hidden w-full object-cover " preload :src="blok.image.filename + '/m/1400x0'" :alt="blok.image.alt" width="1440" height="500" />

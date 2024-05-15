@@ -6,7 +6,7 @@
     <StoryblokComponent v-for="blok in blok.body" :key="blok._uid" :blok="blok" />
   </div>
   <div v-if="blok.cta_show" id="top" class="h-[350px] sm:h-[500px] bg-[#1A96D2] relative flex flex-col items-center justify-center overflow-hidden my-auto isolate px-6 py-24 pt-10 xl:py-32 lg:px-8">
-    <div class="opacity-30 sm:opacity-25">
+    <!-- <div class="opacity-30 sm:opacity-25">
       <svg class="absolute inset-x-0 top-[-4.5rem] left-[10px] sm:left-[-380px] -z-10 h-[60rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
         <defs>
           <pattern id="1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84" width="200" height="200" x="50%" y="-1" patternUnits="userSpaceOnUse">
@@ -17,7 +17,7 @@
         </svg>
         <rect width="100%" height="100%" stroke-width="0" fill="url(#1f932ae7-37de-4c0a-a8b0-a6e3b4d44b84)"></rect>
       </svg>
-    </div>
+    </div> -->
 
     <div class="hidden lg:block absolute inset-y-0 -right-32 xl:right-0"><img src="https://a.storyblok.com/f/278050/1170x577/10e909db78/cta-element.svg" width="1440" height="500" alt="" data-nuxt-img="" class="w-[90%] xl:w-full object-cover"></div><!-- wave wave bottom -->
     <div class="absolute z-30 inset-x-0 bottom-0"><svg viewBox=" 0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

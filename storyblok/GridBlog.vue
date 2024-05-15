@@ -95,7 +95,7 @@ const all_pa = ref(null)
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories', {
   version: 'published',
-  starts_with: 'news',
+  starts_with: 'blog',
   is_startpage: false,
   // sort_by: 'content.date:asc',
   per_page: 3,

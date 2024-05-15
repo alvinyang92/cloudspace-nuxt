@@ -5,12 +5,12 @@
 
 @layer base {
   html {
-    @apply antialiased ;
+    @apply antialiased scroll-smooth;
 }
   body{
     font-family: 'Inter', 'Noto Sans SC', sans-serif;
     /* font-family:  sans-serif; */
-    @apply antialiased;
+    @apply antialiased scroll-smooth;
 }
 
 h2 {
