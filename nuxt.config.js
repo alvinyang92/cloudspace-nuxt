@@ -73,7 +73,7 @@ export default defineNuxtConfig({
      prerender: {
        crawlLinks: true,
       //  autoSubfolderIndex: true,
-      //  routes: ['/'],
+       routes: ['/'],
      },
 
     //    // hooks: {
