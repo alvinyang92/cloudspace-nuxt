@@ -51,7 +51,7 @@
       <!-- card -->
       <div :class="marginTopClasses" class="z-[9999] mx-auto max-w-2xl lg:max-w-none">
         <!-- grid card -->
-        <div :class="[gridClasses, maxWidth]" class="grid gap-x-8 gap-y-8 sm:gap-y-14 relative z-[999]">
+        <div :class="[gridClasses, maxWidth]" class="grid gap-x-8 gap-y-8 sm:gap-y-14 ">
           <!-- grid card -->
           <StoryblokComponent v-for="blok in blok.grid_card" :key="blok._uid" :blok="blok" />
           <!-- pa card -->
@@ -63,7 +63,7 @@
           <StoryblokComponent v-for="blok in blok.faq_card" :key="blok._uid" :blok="blok" />
         </div>
         <!-- client logo -->
-        <div v-if="blok.client_logo" :class="[gridClasses, mobileGridClasses, maxWidth]" class="grid grid-cols-1 gap-x-8 gap-y-8">
+        <div v-if="blok.client_logo" :class="[gridClasses, mobileGridClasses, maxWidth]" class="grid grid-cols-1 gap-x-8 gap-y-8 relative z-[999]">
           <StoryblokComponent v-for="blok in blok.client_logo" :key="blok._uid" :blok="blok" />
         </div>
         <!-- left right -->
