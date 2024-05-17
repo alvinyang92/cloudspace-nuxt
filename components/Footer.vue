@@ -251,7 +251,7 @@
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Support</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li><nuxt-link to="/contact" class="text-sm leading-6 hover:text-[#1A96D2]">Contact Us</nuxt-link></li>
-                <li><nuxt-link to="/news" class="text-sm leading-6 hover:text-[#1A96D2]">News</nuxt-link></li>
+                <li><nuxt-link to="/blog" class="text-sm leading-6 hover:text-[#1A96D2]">Blog</nuxt-link></li>
               </ul>
             </div>
 
