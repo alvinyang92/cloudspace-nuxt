@@ -5,7 +5,7 @@
 
     <!-- top -->
     <div class="mx-auto max-w-7xl px-6 lg:px-8 z-[9999]">
-      <div class="h-full flex flex-col md:flex-row md:items-center md:justify-between py-14 ">
+      <div class="h-full flex flex-col md:flex-row md:items-center md:justify-between pt-8 pb-2 ">
 
         <!-- title | category -->
         <div class="md:w-[50%] w-full border-r-[1px]">
