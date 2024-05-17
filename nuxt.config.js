@@ -133,20 +133,20 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en-US', prefix: 'og: https://ogp.me/ns#' },
-      title: 'Cloud-Space – Home',
+      // title: 'Cloud-Space – Home',
       meta: [
 
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes' },
 
-        { name: 'description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
+        // { name: 'description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
         { name: 'robots', content: 'follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large' },
 
         //twitter
-        { name: 'twitter:title', content: 'Cloud-Space – Home' },
-        { name: 'twitter:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
-        { name: 'twitter:card', content: 'summary_large_image', },
-        { property: 'twitter:image', content: 'https://a.storyblok.com/f/278050/1200x630/fb3d2a61cd/og.jpg/m/' },
+        // { name: 'twitter:title', content: 'Cloud-Space – Home' },
+        // { name: 'twitter:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
+        // { name: 'twitter:card', content: 'summary_large_image', },
+        // { property: 'twitter:image', content: 'https://a.storyblok.com/f/278050/1200x630/fb3d2a61cd/og.jpg/m/' },
 
         //og 
         { property: 'og:locale', content: 'en-US' },
@@ -155,9 +155,9 @@ export default defineNuxtConfig({
         { property: 'og:image', content: 'https://a.storyblok.com/f/278050/1200x630/fb3d2a61cd/og.jpg/m/' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
-        { property: 'og:image:alt', content: 'Etech' },
+        { property: 'og:image:alt', content: 'Cloud Space' },
         { property: 'og:image:type', content: 'image/png' },
-        { property: 'og:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
+        // { property: 'og:description', content: 'Cloud Automation Transforming & Streamlining Cost Optimization' },
       ],
       link: [
         //favicon
