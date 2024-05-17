@@ -39,7 +39,7 @@
     <!-- content -->
     <div class="mt-6 md:mt-16 text-left z-50 relative w-full mx-auto max-w-7xl md:px-8 px-0">
       <h1 class="sm:!leading-[2.5rem] xl:!leading-[3rem] !text-3xl sm:!text-[2.5rem] lg:w-[50%] w-full  font-bold text-white">Get started with Us</h1>
-      <p class="lg:w-[50%] w-full mt-6 text-lg leading-8 text-white">Explore our solution by contacting us for further exploration and question.
+      <p class="lg:w-[50%] w-full mt-6 text-lg leading-8 text-white">Ready to learn more? Get in touch and discover how our solution can benefit your business.
 
       </p><!-- button -->
       <div class="mt-6 flex items-center gap-x-6">

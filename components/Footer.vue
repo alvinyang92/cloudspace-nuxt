@@ -198,7 +198,7 @@
               <ul role="list" class="mt-6 space-y-4">
                 <li><nuxt-link to="/about" class="text-sm leading-6  hover:text-[#1A96D2]">About Us</nuxt-link></li>
                 <li><nuxt-link to="/solution" class="text-sm leading-6 hover:text-[#1A96D2]">Solution</nuxt-link></li>
-                <li><nuxt-link to="/success-stories" class="text-sm leading-6 hover:text-[#1A96D2]">Success Stories</nuxt-link></li>
+                <li><nuxt-link to="/customer-stories" class="text-sm leading-6 hover:text-[#1A96D2]">Customer Stories</nuxt-link></li>
                 <li><nuxt-link to="/partners" class="text-sm leading-6 hover:text-[#1A96D2]">Partners</nuxt-link></li>
 
 
@@ -227,11 +227,21 @@
             <div class="">
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Contact</h3>
               <div class="mt-6 space-y-4 ">
-                <!-- address -->
+                <!-- company name -->
                 <div class="text-sm leading-6  hover:text-[#1A96D2]">
-                  <nuxt-link to="https://maps.app.goo.gl/FqEyUPWK58hsm89n9" target="_blank" rel="noopener noreferrer" class="">
-                    Block D-5-3, SETIAWALK, Persiaran Wawasan,<br> Pusat Bandar Puchong,<br> 47160 Puchong, Selangor
-                  </nuxt-link>
+                  <div class="flex flex-col">
+                    <span class="font-semibold">Cloud Space Sdn. Bhd.</span>
+                    <span class="">(Co. Reg. 1482674-H)</span>
+                  </div>
+                </div>
+                <!-- address -->
+                <div class="text-sm leading-6 ">
+                  <div class="flex flex-col">
+                    <span class="font-medium">Malaysia Office</span>
+                    <nuxt-link to="https://maps.app.goo.gl/FqEyUPWK58hsm89n9" target="_blank" rel="noopener noreferrer" class=" hover:text-[#1A96D2]">
+                      SETIAWALK, Block D-5-3, Persiaran Wawasan,<br> Pusat Bandar Puchong,<br> 47160 Puchong, Selangor
+                    </nuxt-link>
+                  </div>
                 </div>
                 <!-- mail -->
                 <div class="text-sm leading-6 hover:text-[#1A96D2]">
@@ -273,7 +283,7 @@
             <!-- start -->
             <div class="sm:flex sm:items-center sm:divide-x sm:divide-gray-300">
               <div class="mt-2">
-                <p class="mt-4 sm:mt-8 sm:pr-3 text-xs leading-5 md:order-1 md:mt-0"> ©Copyright {{ new Date().getFullYear() }} Cloud Space Sdn. Bhd.(Co. Reg. 1482674-H)</p>
+                <p class="mt-4 sm:mt-8 sm:pr-3 text-xs leading-5 md:order-1 md:mt-0">© Copyright {{ new Date().getFullYear() }} Cloud Space Sdn. Bhd. (Co. Reg. 1482674-H)</p>
               </div>
             </div>
 

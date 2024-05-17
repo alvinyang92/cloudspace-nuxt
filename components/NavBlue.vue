@@ -205,7 +205,7 @@
           <nuxt-link to="/about" class="text-sm text-white leading-6 hover:text-gray-300">About Us</nuxt-link>
           <nuxt-link to="/clients" class="text-sm text-white leading-6 hover:text-gray-300">Clients</nuxt-link>
           <nuxt-link to="/solution" class="text-sm text-white leading-6 hover:text-gray-300">Solution</nuxt-link>
-          <nuxt-link to="/success-stories" class="text-sm text-white leading-6 hover:text-gray-300">Success Stories</nuxt-link>
+          <nuxt-link to="/customer-stories" class="text-sm text-white leading-6 hover:text-gray-300">Customer Stories</nuxt-link>
           <nuxt-link to="/partners" class="text-sm text-white leading-6 hover:text-gray-300">Partners</nuxt-link>
           <!-- <nuxt-link to="/"  class="text-sm leading-6">Events</nuxt-link> -->
           <nuxt-link to="/blog" class="text-sm text-white leading-6 hover:text-gray-300">Blog</nuxt-link>
@@ -413,7 +413,7 @@
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/solution" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Solution</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/success-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Success Stories</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/customer-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Customer Stories</nuxt-link>
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/partners" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white">Partners</nuxt-link>
 

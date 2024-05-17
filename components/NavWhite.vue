@@ -193,7 +193,7 @@
           <nuxt-link to="/about" class="text-sm leading-6 hover:text-cs-light-blue">About Us</nuxt-link>
           <nuxt-link to="/clients" class="text-sm leading-6 hover:text-cs-light-blue">Clients</nuxt-link>
           <nuxt-link to="/solution" class="text-sm leading-6 hover:text-cs-light-blue">Solution</nuxt-link>
-          <nuxt-link to="/success-stories" class="text-sm leading-6 hover:text-cs-light-blue">Success Stories</nuxt-link>
+          <nuxt-link to="/customer-stories" class="text-sm leading-6 hover:text-cs-light-blue">Customer Stories</nuxt-link>
           <nuxt-link to="/partners" class="text-sm leading-6 hover:text-cs-light-blue">Partners</nuxt-link>
           <!-- <nuxt-link to="/"  class="text-sm leading-6">Events</nuxt-link> -->
           <nuxt-link to="/blog" class="text-sm leading-6 hover:text-cs-light-blue">Blog</nuxt-link>
@@ -392,7 +392,7 @@
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/solution" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Solution</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/success-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Success Stories</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/customer-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Customer Stories</nuxt-link>
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/partners" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Partners</nuxt-link>
 

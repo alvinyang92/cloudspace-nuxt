@@ -88,7 +88,7 @@
   </div>
 
   <!-- cta -->
-  <div  class="h-[350px] sm:h-[500px] bg-[#1A96D2] relative flex flex-col items-center justify-center overflow-hidden my-auto isolate px-6 py-24 pt-10 xl:py-32 lg:px-8">
+  <div class="h-[350px] sm:h-[500px] bg-[#1A96D2] relative flex flex-col items-center justify-center overflow-hidden my-auto isolate px-6 py-24 pt-10 xl:py-32 lg:px-8">
     <!-- <div class="opacity-30 sm:opacity-25">
       <svg class="absolute inset-x-0 top-[-4.5rem] left-[10px] sm:left-[-380px] -z-10 h-[60rem] w-full stroke-gray-200 [mask-image:radial-gradient(32rem_32rem_at_center,white,transparent)]" aria-hidden="true">
         <defs>
@@ -122,7 +122,7 @@
     <!-- content -->
     <div class="mt-6 md:mt-16 text-left z-50 relative w-full mx-auto max-w-7xl md:px-8 px-0">
       <h1 class="sm:!leading-[2.5rem] xl:!leading-[3rem] !text-3xl sm:!text-[2.5rem] lg:w-[50%] w-full  font-bold text-white">Get started with Us</h1>
-      <p class="lg:w-[50%] w-full mt-6 text-lg leading-8 text-white">Explore our solution by contacting us for further exploration and question.
+      <p class="lg:w-[50%] w-full mt-6 text-lg leading-8 text-white">Ready to learn more? Get in touch and discover how our solution can benefit your business.
 
       </p><!-- button -->
       <div class="mt-6 flex items-center gap-x-6">
