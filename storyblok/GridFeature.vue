@@ -111,7 +111,7 @@ const gridClasses = computed(() => {
     : props.blok.grid === '3' ? 'sm:grid-cols-2 xl:grid-cols-3'
       : props.blok.grid === '4' ? 'sm:grid-cols-2 xl:grid-cols-4'
         : props.blok.grid === '5' ? 'sm:grid-cols-2 xl:grid-cols-5'
-          : props.blok.grid === '1' ? 'sm:grid-cols-1'
+          : props.blok.grid === '1' ? 'sm:grid-cols-1 sm:gap-y-6'
             : ''
 })
 

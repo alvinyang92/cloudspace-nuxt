@@ -8,18 +8,12 @@
 
     <!-- rounded image -->
     <div v-if="blok.image_rounded?.filename" class="mb-5 w-full mx-auto">
-      <nuxt-img class="h-[200px] w-[200px] object-cover  rounded-full mx-auto" :src="blok.image_rounded.filename + '/m/600x0'" :alt="blok.image_rounded.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
+      <nuxt-img  class="h-[200px] w-[200px] object-cover  rounded-full mx-auto" :src="blok.image_rounded.filename + '/m/600x0'" :alt="blok.image_rounded.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
-
 
     <!-- image-testi -->
     <div v-if="blok.image_testi?.filename" class="mb-5">
       <nuxt-img :class="heightClass" class="rounded-lg h-[200px] object-cover w-full shadow-lg ring-1 ring-gray-900/5" :src="blok.image_testi.filename + '/m/1000x0'" :alt="blok.image_testi.alt" width="1000" height="600" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
-    </div>
-
-    <!-- goolge tab image -->
-    <div v-if="blok.image_google_tab?.filename" class="">
-      <nuxt-img :class="heightClass" class="rounded-lg h-[150px] object-cover w-full" :src="blok.image_google_tab.filename + '/m/600x0'" :alt="blok.image_google_tab.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
 
     <!--title -->
@@ -42,11 +36,11 @@
       <!-- title -->
       <h3 :class="[textColor]" class="font-bold text-xl" v-if="blok.title">{{ blok.title }}</h3>
     </div>
-
+    
     <!--desc -->
-    <div v-if="blok.desc" :class="[textPosition]" class="mt-2 flex flex-auto flex-col leading-6 text-gray-600">
+    <div :class="[textPosition]" class="mt-2 flex flex-auto flex-col leading-6 text-gray-600">
       <!-- desc -->
-      <p :class="[textColor]" v-if="blok.desc" class="">{{ blok.desc }}</p>
+    <p :class="[textColor]" v-if="blok.desc" class="">{{ blok.desc }}</p>
 
       <!-- button -->
       <div class="mt-2" v-if="blok.link_title">
@@ -59,7 +53,7 @@
     </div>
     <!-- richtext -->
     <!-- article content -->
-    <article v-if="blok.article_show" v-html="html" class="mt-4 prose mx-auto max-w-4xl">
+    <article v-if="blok.article" v-html="html" class="mt-4 prose mx-auto max-w-4xl">
     </article>
   </div>
 </template>
@@ -118,7 +112,7 @@ const textPosition = computed(() => {
 
 const solidBorder = computed(() => {
   return props.blok.solid_border === 'solidbox' ? 'bg-white p-8 rounded-2xl shadow-lg ring-1 ring-gray-900/5'
-    : props.blok.solid_border === 'googletab' ? 'bg-white p-4 rounded-2xl shadow-lg ring-1 ring-gray-900/5'
+    // : props.blok.solid_border === 'hide' ? 'hidden'
     : ''
 })
 
