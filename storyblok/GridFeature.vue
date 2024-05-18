@@ -31,7 +31,7 @@
 
 
     <div :class="leftRightPadding" class="z-[9999] mx-auto max-w-7xl px-6 lg:px-8">
-      
+
       <!-- title -->
       <div :class="[textPosition]" class="z-[9999] mx-auto max-w-2xl text-center mb-10">
         <h2 :class="[textColor]" v-if="blok.label_title" class="text-base font-semibold leading-7">{{ blok.label_title }}</h2>
@@ -70,10 +70,12 @@
         <div :class="[maxWidth]" class="space-y-14 ">
           <StoryblokComponent v-for="blok in blok.left_right_card" :key="blok._uid" :blok="blok" />
         </div>
-        <!-- tab -->
-        <div v-if="blok.grid_tab" :class="[gridClasses, mobileGridClasses, maxWidth]" class="grid grid-cols-1 gap-x-8 gap-y-8">
-          <StoryblokComponent v-for="blok in blok.grid_tab" :key="blok._uid" :blok="blok" />
-        </div>
+
+      </div>
+
+      <!-- tab -->
+      <div v-if="blok.grid_tab" :class="[gridClasses, mobileGridClasses, maxWidth]" class="grid grid-cols-1 gap-x-8 gap-y-8">
+        <StoryblokComponent v-for="blok in blok.grid_tab" :key="blok._uid" :blok="blok" />
       </div>
       <!-- button -->
       <div v-if="blok.btn_title" class="mt-10 flex items-center justify-center gap-x-6">
@@ -190,8 +192,8 @@ const gradientbgClasses = computed(() => {
 
 const lightbgClasses = computed(() => {
   return props.blok.lightbg === 'hidden' ? 'hidden'
-  : props.blok.lightbg === 'show' ? 'block'
-    // : props.blok.gradient_color === 'show' ? 'block'
+    : props.blok.lightbg === 'show' ? 'block'
+      // : props.blok.gradient_color === 'show' ? 'block'
       : ''
 })
 

@@ -118,7 +118,7 @@ const textPosition = computed(() => {
 
 const solidBorder = computed(() => {
   return props.blok.solid_border === 'solidbox' ? 'bg-white p-8 rounded-2xl shadow-lg ring-1 ring-gray-900/5'
-    : props.blok.solid_border === 'googletab' ? 'bg-white p-4 rounded-2xl shadow-lg ring-1 ring-gray-900/5'
+    : props.blok.solid_border === 'googletab' ? 'bg-white p-4 rounded-2xl shadow-lg ring-1 ring-gray-900/5 sm:w-[180px]'
     : ''
 })
 
