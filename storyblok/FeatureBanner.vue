@@ -3494,7 +3494,7 @@ const bgcolorClasses = computed(() => {
 const heightClass = computed(() => {
     return props.blok.height === 'mobile_long' ? 'h-[350px] sm:h-[500px]'
         : props.blok.height === '800' ? 'h-[450px] sm:h-[700px]'
-            : props.blok.height === 'special' ? 'h-[350px] xl:h-[50rem] lg:h-[40rem] sm:h-[36rem]'
+            : props.blok.height === 'special' ? 'h-[350px] xl:h-[50rem] lg:h-[40rem] sm:h-[350px]'
                 : ''
 })
 
