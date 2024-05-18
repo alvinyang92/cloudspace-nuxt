@@ -231,7 +231,7 @@
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Pages</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li><nuxt-link to="/about" class="text-sm leading-6  hover:text-[#1A96D2]">About Us</nuxt-link></li>
-                <li><nuxt-link to="/solution" class="text-sm leading-6 hover:text-[#1A96D2]">Solution</nuxt-link></li>
+                <li><nuxt-link to="/solutions" class="text-sm leading-6 hover:text-[#1A96D2]">Solutions</nuxt-link></li>
                 <li><nuxt-link to="/customer-stories" class="text-sm leading-6 hover:text-[#1A96D2]">Customer Stories</nuxt-link></li>
                 <li><nuxt-link to="/partners" class="text-sm leading-6 hover:text-[#1A96D2]">Partners</nuxt-link></li>
 
@@ -251,7 +251,7 @@
               <h3 class="text-gray-400 text-sm font-semibold leading-6">Support</h3>
               <ul role="list" class="mt-6 space-y-4">
                 <li><nuxt-link to="/contact" class="text-sm leading-6 hover:text-[#1A96D2]">Contact Us</nuxt-link></li>
-                <li><nuxt-link to="/blog" class="text-sm leading-6 hover:text-[#1A96D2]">Blog</nuxt-link></li>
+                <li><nuxt-link to="/blogs" class="text-sm leading-6 hover:text-[#1A96D2]">Blogs</nuxt-link></li>
               </ul>
             </div>
 

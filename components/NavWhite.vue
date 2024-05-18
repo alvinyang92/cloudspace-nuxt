@@ -192,11 +192,11 @@
           </Popover> -->
           <nuxt-link to="/about" class="text-sm leading-6 hover:text-cs-light-blue">About Us</nuxt-link>
           <nuxt-link to="/clients" class="text-sm leading-6 hover:text-cs-light-blue">Clients</nuxt-link>
-          <nuxt-link to="/solution" class="text-sm leading-6 hover:text-cs-light-blue">Solution</nuxt-link>
+          <nuxt-link to="/solutions" class="text-sm leading-6 hover:text-cs-light-blue">Solutions</nuxt-link>
           <nuxt-link to="/customer-stories" class="text-sm leading-6 hover:text-cs-light-blue">Customer Stories</nuxt-link>
           <nuxt-link to="/partners" class="text-sm leading-6 hover:text-cs-light-blue">Partners</nuxt-link>
           <!-- <nuxt-link to="/"  class="text-sm leading-6">Events</nuxt-link> -->
-          <nuxt-link to="/blog" class="text-sm leading-6 hover:text-cs-light-blue">Blog</nuxt-link>
+          <nuxt-link to="/blogs" class="text-sm leading-6 hover:text-cs-light-blue">Blogs</nuxt-link>
           <!-- <nuxt-link to="/faq" class="text-sm leading-6 text-gray-900">Faqs</nuxt-link> -->
 
           <!-- <nuxt-link to="/Portfolio" class="text-sm leading-6 text-gray-900">Portfolio</nuxt-link> -->
@@ -390,13 +390,13 @@
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/clients" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Clients</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/solution" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Solution</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/solutions" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Solution</nuxt-link>
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/customer-stories" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Customer Stories</nuxt-link>
 
                 <nuxt-link @click="mobileMenuOpen = false" to="/partners" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Partners</nuxt-link>
 
-                <nuxt-link @click="mobileMenuOpen = false" to="/blog" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Blog</nuxt-link>
+                <nuxt-link @click="mobileMenuOpen = false" to="/blogs" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Blogs</nuxt-link>
 
                 <!-- <nuxt-link @click="mobileMenuOpen = false" to="/calculator" class="-mx-3 block rounded-lg px-3 py-2 text-base 
                 font-semibold leading-7 text-gray-900 hover:text-[#1A96D2]">Calculator</nuxt-link> -->

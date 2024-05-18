@@ -23,25 +23,25 @@
         </div>
 
         <!-- content -->
-        <div class="max-w-5xl mx-auto">
+        <div class="max-w-4xl mx-auto">
             <div id="default-tab-content">
                 <div class="hidden mt-10" id="inframod" role="tabpanel" aria-labelledby="inframod-tab">
-                    <div class="w-full flex flex-wrap sm:flex-row gap-10 items-center justify-center">
+                    <div class="w-full flex flex-col sm:flex-row gap-10 items-center justify-center">
                         <StoryblokComponent v-for="blok in blok.inframod" :key="blok._uid" :blok="blok" />
                     </div>
                 </div>
                 <div class="hidden mt-10" id="devdata" role="tabpanel" aria-labelledby="devdata-tab">
-                    <div class="w-full flex flex-wrap sm:flex-row gap-10 items-center justify-center">
+                    <div class="w-full flex flex-col sm:flex-row gap-10 items-center justify-center">
                         <StoryblokComponent v-for="blok in blok.devdata" :key="blok._uid" :blok="blok" />
                     </div>
                 </div>
                 <div class="hidden mt-10" id="google-work-chrome" role="tabpanel" aria-labelledby="google-work-chrome-tab">
-                    <div class="w-full flex flex-wrap sm:flex-row gap-10 items-center justify-center">
+                    <div class="w-full flex flex-col sm:flex-row gap-10 items-center justify-center">
                         <StoryblokComponent v-for="blok in blok.google_work_chrome" :key="blok._uid" :blok="blok" />
                     </div>
                 </div>
                 <div class="hidden mt-10" id="others" role="tabpanel" aria-labelledby="others-tab">
-                    <div class="w-full flex flex-wrap sm:flex-row gap-10 items-center justify-center">
+                    <div class="w-full flex flex-col sm:flex-row gap-10 items-center justify-center">
                         <StoryblokComponent v-for="blok in blok.others" :key="blok._uid" :blok="blok" />
                     </div>
 

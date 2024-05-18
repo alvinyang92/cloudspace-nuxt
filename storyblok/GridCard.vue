@@ -19,7 +19,7 @@
 
     <!-- goolge tab image -->
     <div v-if="blok.image_google_tab?.filename" class="">
-      <nuxt-img :class="heightClass" class="rounded-lg h-auto sm:h-[150px] object-cover w-full" :src="blok.image_google_tab.filename + '/m/600x0'" :alt="blok.image_google_tab.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
+      <nuxt-img :class="heightClass" class="rounded-lg object-cover w-full" :src="blok.image_google_tab.filename + '/m/600x0'" :alt="blok.image_google_tab.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
 
     <!--title -->
