@@ -4,7 +4,7 @@
 </template>
 
 <script setup>
-import { SpeedInsights } from "@vercel/speed-insights/nuxt"
+// import { SpeedInsights } from "@vercel/speed-insights/nuxt"
 let { slug } = useRoute().params
 
 const resolveRelations = ['article-page.category', 'article-page.article_post', 'practice-area-page.article_post', 'calculator-page.category', 'statute-page.category', 'practice-area-page.category','faq-page.category']

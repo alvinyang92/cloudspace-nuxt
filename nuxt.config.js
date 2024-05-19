@@ -70,6 +70,11 @@ export default defineNuxtConfig({
 
   //sitemap 
   nitro: {
+
+    // preset: 'firebase',
+    // replace: {
+    //   'functions.https.onRequest': functions.region('asia-east1').https.onRequest,
+    // }
     //  prerender: {
     //    crawlLinks: true,
     //   //  autoSubfolderIndex: true,
