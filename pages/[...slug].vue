@@ -1,5 +1,5 @@
 <template>
-<SpeedInsights/>
+<!-- <SpeedInsights/> -->
   <StoryblokComponent v-if="story" :blok="story.content" :raw="story" />
 </template>
 
