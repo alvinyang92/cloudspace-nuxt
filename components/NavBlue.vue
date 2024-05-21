@@ -204,7 +204,7 @@
           </Popover> -->
           <nuxt-link to="/about" class="text-sm text-white leading-6 hover:text-gray-300">About Us</nuxt-link>
           <nuxt-link to="/clients" class="text-sm text-white leading-6 hover:text-gray-300">Clients</nuxt-link>
-          <nuxt-link to="/solution" class="text-sm text-white leading-6 hover:text-gray-300">Solutions</nuxt-link>
+          <nuxt-link to="/solutions" class="text-sm text-white leading-6 hover:text-gray-300">Solutions</nuxt-link>
           <nuxt-link to="/customer-stories" class="text-sm text-white leading-6 hover:text-gray-300">Customer Stories</nuxt-link>
           <nuxt-link to="/partners" class="text-sm text-white leading-6 hover:text-gray-300">Partners</nuxt-link>
           <!-- <nuxt-link to="/"  class="text-sm leading-6">Events</nuxt-link> -->
