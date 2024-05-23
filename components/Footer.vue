@@ -193,7 +193,7 @@
 
               <!-- etech logo -->
               <div class="px-2">
-                <nuxt-link to="https://www.etech.net.my" class="-m-1.5 p-1.5 focus:outline-none">
+                <nuxt-link to="https://www.etech.net.my" target="_blank" class="-m-1.5 p-1.5 focus:outline-none">
                   <span class="sr-only">Your Company</span>
                   <svg alt="Etech Logo" width="42" height="37" viewBox="0 0 224 200" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="108.769" width="32.0826" height="113.715" rx="15" transform="rotate(69.8706 108.769 0)" fill="#FF1010"></rect>
@@ -213,12 +213,16 @@
           <div class="">
             <!-- logo -->
             <p class="text-sm italic leading-6 mt-6">We are awarded with</p>
-            <div class="flex gap-3 mt-4">
-              <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
-                <nuxt-img class="w-[70px]" src="https://a.storyblok.com/f/278050/150x150/08a068b4a2/google-cloud-partner.png/m/" />
-              </nuxt-link>
-              <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/c1b9676966/google-premier-partner.png/m/" />
-              <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/99af213f9a/google-infra.png/m/" />
+            <div class="flex flex-col gap-5">
+              <div class="flex gap-3 mt-4">
+                <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
+                  <nuxt-img class="w-[70px]" src="https://a.storyblok.com/f/278050/150x150/08a068b4a2/google-cloud-partner.png/m/" />
+                </nuxt-link>
+                <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/c1b9676966/google-premier-partner.png/m/" />
+                <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/99af213f9a/google-infra.png/m/" />
+              
+              </div>
+              <nuxt-img class="w-[150px]" src="https://a.storyblok.com/f/278050/301x138/399c64873d/google-cloud-partner-all-star-footer.jpg/m/" />
             </div>
           </div>
 
