@@ -75,7 +75,7 @@ useHead({
     { property: 'og:description', content: desc },
   ],
   link: [
-    { rel: 'canonical', href: `https://www.etech.net.my/${link}` },
+    { rel: 'canonical', href: `https://cloud-space.co/${link}` },
   ],
 })
 </script>
