@@ -54,7 +54,7 @@
           <!-- grid card -->
           <StoryblokComponent v-for="blok in blok.grid_card" :key="blok._uid" :blok="blok" />
           <!-- pa card -->
-          <BlogCard v-if="blok.pa_show" v-for="blogcard in all_pa" :key="blogcard.uuid" :blogcard="blogcard.content" :slug="blogcard.full_slug" />
+          <BlogCard v-if="blok.blog_show" v-for="blogcard in all_blog" :key="blogcard.uuid" :blogcard="blogcard.content" :slug="blogcard.full_slug" />
 
         </div>
         <!-- faq -->
@@ -77,7 +77,7 @@
       <!-- button -->
       <div v-if="blok.btn_title" class="mt-10 flex items-center justify-center gap-x-6">
         <!-- else -->
-        <nuxt-link :to="`${blok.link.cached_url}`" :target="blok.link.target" :class="[btnColor]" class="rounded-md bg-etech-blue px-3.5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
+        <nuxt-link :to="`${blok.link.cached_url}`" :target="blok.link.target" :class="[btnColor]" class="rounded-md px-3.5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">
           {{ blok.btn_title }}
         </nuxt-link>
 
@@ -91,16 +91,16 @@
 <script setup>
 const props = defineProps({ blok: Object, raw: Object })
 
-const all_pa = ref(null)
+const all_blog = ref(null)
 const storyblokApi = useStoryblokApi()
 const { data } = await storyblokApi.get('cdn/stories', {
   version: 'published',
   starts_with: 'blogs',
   is_startpage: false,
   // sort_by: 'content.date:asc',
-  per_page: 3,
+  // per_page: 3,
 })
-all_pa.value = data.stories
+all_blog.value = data.stories
 
 const resolvedRichText = computed(() => renderRichText(props.blok.richtext_title))
 const resolvedRichTextSecond = computed(() => renderRichText(props.blok.richtext))

@@ -172,7 +172,7 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'preconnect', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans+SC:wght@100;200;300;400;500;600;700;800;900&display=swap' },
         //canonical
-        // { rel: 'canonical', href: `https://cloud-space.co/` },
+      { rel: 'canonical', href: `https://cloud-space.co/` },
       ],
       script:
         [
