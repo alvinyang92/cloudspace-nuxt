@@ -27,6 +27,8 @@ export default defineNuxtConfig({
   //solve fsevents
   vite: { optimizeDeps: { exclude: ["fsevents"] }, },
 
+  // ssr: false,
+
   //modules
   modules: [
     [

@@ -33,10 +33,10 @@
     <div :class="leftRightPadding" class="z-[9999] mx-auto max-w-7xl px-6 lg:px-8">
 
       <!-- title -->
-      <div :class="[textPosition]" class="z-[9999] mx-auto max-w-2xl text-center mb-10">
+      <div :class="[textPosition]" class="z-[9999] mx-auto max-w-3xl text-center mb-10">
         <h2 :class="[textColor]" v-if="blok.label_title" class="text-base font-semibold leading-7">{{ blok.label_title }}</h2>
         <h2 :class="[textColor]" v-if="blok.title" class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">{{ blok.title }}</h2>
-        <p :class="[textColor]" v-if="blok.small_title" class="mt-3 leading-8 text-black font-semibold ">{{ blok.small_title }}</p>
+        <p :class="[textColor]" v-if="blok.small_title" class="mt-3 leading-6 text-black font-semibold ">{{ blok.small_title }}</p>
         <!-- richtext title -->
         <article :class="[textColor]" v-if="blok.richtext_title" v-html="resolvedRichText" class="prose mt-3 leading-5 text-black font-semibold ">
         </article>

@@ -20,7 +20,13 @@
         </div> -->
 
         <!-- image -->
-        <nuxt-img :class="[heightClass, imgPosition]" v-if="blok.image?.filename" class="absolute inset-0 -z-10 overflow-hidden w-full object-cover " preload :src="blok.image.filename + '/m/1400x0'" :alt="blok.image.alt" width="1440" height="500" />
+        <nuxt-img 
+        :class="[heightClass, imgPosition]" 
+        v-if="blok.image?.filename" 
+        class="absolute inset-0 -z-10 overflow-hidden w-full object-cover " preload 
+        :src="blok.image.filename + '/m/1400x0'" 
+        :alt="blok.image.alt" 
+        width="1440" height="500" />
 
         <!-- left image -->
         <div class="hidden lg:block absolute inset-y-0 -right-32 xl:right-0">
@@ -3424,6 +3430,20 @@
 
         <!-- content -->
         <div :class="[marginTop, textPosition]" class=" z-50 relative w-full mx-auto max-w-7xl md:px-8 px-0">
+            <!-- google cloud -->
+            <div class="mx-auto w-full pb-6">
+                <nuxt-img 
+                v-if="blok.title_logo?.filename"
+                class="w-[30%] mx-auto" 
+                preload 
+                :src="blok.title_logo?.filename" 
+                :alt="blok.title_logo?.alt" 
+                width="900" 
+                height="700" 
+                sizes="xl:100vw lg:50vw md:400px sm:400px" />
+
+            </div>
+
             <h1 v-if="blok.title" :class="[titleFont, textWidth]" class="text-4xl font-bold text-white"> {{ blok.title }}</h1>
 
             <p :class="[textWidth]" v-if="blok.desc" class="mt-6 text-lg leading-8 text-white"> {{ blok.desc }}</p>
