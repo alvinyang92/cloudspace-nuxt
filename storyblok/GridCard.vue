@@ -2,8 +2,13 @@
   <div v-editable="blok" :class="solidBorder" class="flex flex-col">
     <StoryblokComponent v-for="blok in blok.flexi" :key="blok._uid" :blok="blok" />
     <!-- image -->
-    <div v-if="blok.image?.filename" class="mb-5">
-      <nuxt-img :class="heightClass" class="rounded-lg h-[200px] object-cover w-full" :src="blok.image.filename + '/m/600x0'" :alt="blok.image.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
+    <div v-if="blok.image?.filename" class="mb-5 ">
+      <nuxt-img :class="heightClass" class="rounded-2xl h-[200px] object-cover w-full " :src="blok.image.filename + '/m/600x0'" :alt="blok.image.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
+    </div>
+
+      <!-- single image -->
+    <div v-if="blok.image_full?.filename" class="mb-5 shadow-xl">
+      <nuxt-img :class="heightClass" class="rounded-2xl h-[200px] object-cover w-full shadow-xl" :src="blok.image_full.filename + '/m/'" :alt="blok.image_full.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
 
     <!-- rounded image -->

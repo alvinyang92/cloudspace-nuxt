@@ -212,17 +212,36 @@
 
           <div class="">
             <!-- logo -->
-            <p class="text-sm italic leading-6 mt-6">We are awarded with</p>
+            <!-- <p class="text-sm italic leading-6 mt-6">We are awarded with</p> -->
             <div class="flex flex-col gap-5">
-              <div class="flex gap-3 mt-4">
-                <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
+              <div class="flex mt-4">
+                <div class="flex flex-col justify-center  pr-5 ">
+                  <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
+                    <nuxt-img class="w-[70px] my-4" src="https://a.storyblok.com/f/278050/300x143/3c10e01a76/malaysia-digital.png/m/" />
+                  </nuxt-link>
+                  <span class="text-xs">Malaysia Digital</span>
+                </div>
+
+                <div class="flex flex-col justify-end gap-2 pl-5">
+                  <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
+                    <nuxt-img class="w-[70px]" src="https://a.storyblok.com/f/278050/250x197/819325b22d/mof.png/m/" />
+                  </nuxt-link>
+                  <span class="text-xs">MOF Certified Vendor</span>
+                </div>
+
+
+                <!-- <nuxt-link target="_blank" to="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd">
                   <nuxt-img class="w-[70px]" src="https://a.storyblok.com/f/278050/150x150/08a068b4a2/google-cloud-partner.png/m/" />
-                </nuxt-link>
-                <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/c1b9676966/google-premier-partner.png/m/" />
-                <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/99af213f9a/google-infra.png/m/" />
-              
+                </nuxt-link> -->
+
+                <!-- <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/c1b9676966/google-premier-partner.png/m/" /> -->
+
+                <!-- <nuxt-img class="w-[70px] h-[70px]" src="https://a.storyblok.com/f/278050/150x150/99af213f9a/google-infra.png/m/" /> -->
+
               </div>
-              <nuxt-img class="w-[150px]" src="https://a.storyblok.com/f/278050/301x138/399c64873d/google-cloud-partner-all-star-footer.jpg/m/" />
+
+              <!-- <nuxt-img class="w-[150px]" src="https://a.storyblok.com/f/278050/301x138/399c64873d/google-cloud-partner-all-star-footer.jpg/m/" /> -->
+
             </div>
           </div>
 
