@@ -11,11 +11,11 @@
         <nuxt-img v-if="blok.image?.filename" class="mt-10 rounded-lg w-[150px] object-cover mx-auto" :src="blok.image.filename + '/m/400x0'" :alt="blok.image.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
 
         <!-- gallery image -->
-        <nuxt-img v-if="blok.gallery_image?.filename" class="mt-10 rounded-lg w-full h-[150px] object-cover " :src="blok.gallery_image.filename + '/m/400x0'" :alt="blok.gallery_image.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
+        <nuxt-img v-if="blok.gallery_image?.filename" class="mt-10 rounded-lg w-[97%] h-[150px] object-cover " :src="blok.gallery_image.filename + '/m/'" :alt="blok.gallery_image.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
 
 
         <!-- title -->
-        <h3 class="mt-6 text-base font-semibold leading-7 text-gray-900 text-center">{{ blok.title }}</h3>
+        <h3 class="mt-6 text-base font-semibold leading-2 whitespace-nowrap text-gray-900 text-center">{{ blok.title }}</h3>
         <!-- desc -->
         <p class="mt-1 text-base leading-7 text-gray-600 text-center">{{ blok.desc }}</p>
     </div>
