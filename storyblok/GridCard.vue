@@ -7,7 +7,7 @@
     </div>
 
       <!-- single image -->
-    <div v-if="blok.image_full?.filename" class="mb-5 shadow-xl">
+    <div v-if="blok.image_full?.filename" class="mb-5 shadow-xl overflow-hidden">
       <nuxt-img :class="heightClass" class="rounded-2xl h-[200px] object-cover w-full shadow-xl" :src="blok.image_full.filename + '/m/'" :alt="blok.image_full.alt" width="384" height="200" sizes="xl:100vw lg:100vw md:100vw sm:100vw xs:100vw" loading="lazy" />
     </div>
 
