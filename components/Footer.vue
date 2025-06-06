@@ -296,7 +296,7 @@
                   <div class="flex flex-col">
                     <span class="font-medium">Malaysia Office</span>
                     <nuxt-link to="https://maps.app.goo.gl/FqEyUPWK58hsm89n9" target="_blank" rel="noopener noreferrer" class=" hover:text-[#1A96D2]">
-                      SETIAWALK, Block D-5-3, Persiaran Wawasan,<br> Pusat Bandar Puchong,<br> 47160 Puchong, Selangor
+                      SETIAWALK, Block D-5-2, Persiaran Wawasan,<br> Pusat Bandar Puchong,<br> 47160 Puchong, Selangor
                     </nuxt-link>
                   </div>
                 </div>

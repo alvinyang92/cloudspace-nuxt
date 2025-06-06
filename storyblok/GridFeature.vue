@@ -57,6 +57,8 @@
           <!-- pa card -->
           <PaCard v-if="blok.pa_show" v-for="pacard in all_pa" :key="pacard.uuid" :pacard="pacard.content" :slug="pacard.full_slug" />
 
+
+
         </div>
         <!-- faq -->
         <div v-if="blok.faq_card" :class="[maxWidth]" class="divide-y divide-gray-900/10">
@@ -71,6 +73,10 @@
           <StoryblokComponent v-for="blok in blok.left_right_card" :key="blok._uid" :blok="blok" />
         </div>
 
+      </div>
+
+      <div v-if="blok.pa_show" class="mt-10 flex items-center justify-center gap-x-6">
+        <a href="https://cloud.google.com/find-a-partner/partner/cloud-space-sdn-bhd" target="_blank" class="!bg-[#1A96D2] rounded-md px-3.5 py-3 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2">More Customer Stories</a>
       </div>
 
       <!-- tab -->
@@ -111,11 +117,11 @@ const resolvedRichTextSecond = computed(() => renderRichText(props.blok.richtext
 const gridClasses = computed(() => {
   return props.blok.grid === '2' ? 'sm:grid-cols-1 xl:grid-cols-2'
     : props.blok.grid === '3' ? 'sm:grid-cols-2 xl:grid-cols-3'
-    : props.blok.grid === '3_special' ? 'sm:grid-cols-3'
-      : props.blok.grid === '4' ? 'sm:grid-cols-2 xl:grid-cols-4'
-        : props.blok.grid === '5' ? 'sm:grid-cols-2 xl:grid-cols-5'
-          : props.blok.grid === '1' ? 'sm:grid-cols-1 sm:gap-y-6'
-            : ''
+      : props.blok.grid === '3_special' ? 'sm:grid-cols-3'
+        : props.blok.grid === '4' ? 'sm:grid-cols-2 xl:grid-cols-4'
+          : props.blok.grid === '5' ? 'sm:grid-cols-2 xl:grid-cols-5'
+            : props.blok.grid === '1' ? 'sm:grid-cols-1 sm:gap-y-6'
+              : ''
 })
 
 const mobileGridClasses = computed(() => {
@@ -163,9 +169,10 @@ const paddingClasses = computed(() => {
 
 const paddingTopClasses = computed(() => {
   return props.blok.padding_top === 'none' ? 'pt-0'
-    : props.blok.padding_top === '8' ? 'pt-4'
-      : props.blok.padding_top === '16' ? 'pt-16'
-        : ''
+    : props.blok.padding_top === '2' ? 'pt-2'
+      : props.blok.padding_top === '8' ? 'pt-4'
+        : props.blok.padding_top === '16' ? 'pt-16'
+          : ''
 })
 
 const marginTopClasses = computed(() => {

@@ -28,7 +28,7 @@
                 <!-- <BuildingOffice2Icon class="h-7 w-6 text-gray-400" aria-hidden="true" /> -->
               </dt>
               <dd>
-                <nuxt-link class="hover:text-gray-200 underline" to="https://maps.app.goo.gl/FqEyUPWK58hsm89n9" target="_blank" rel="noopener noreferrer">Block D-5-3, SETIAWALK, Persiaran Wawasan,<br> Pusat Bandar Puchong,<br> 47160 Puchong, Selangor</nuxt-link>
+                <nuxt-link class="hover:text-gray-200 underline" to="https://maps.app.goo.gl/FqEyUPWK58hsm89n9" target="_blank" rel="noopener noreferrer">Block D-5-2, SETIAWALK, Persiaran Wawasan,<br> Pusat Bandar Puchong,<br> 47160 Puchong, Selangor</nuxt-link>
               </dd>
             </div>
 
